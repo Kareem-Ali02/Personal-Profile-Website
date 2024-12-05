@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kareem Ali - Front-End Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body data-theme="light">
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Hi, Kareem Ali — Front-End Developer</h1>
+            <p>Passionate about building beautiful and responsive websites</p>
+            <button class="btn-primary" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+                Learn More
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="profile-image">
+                <img src="Assets/me.jpg" alt="Profile Picture">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I'm a passionate front-end developer with a keen eye for design and a love for creating seamless user experiences. My journey in web development started with curiosity and has evolved into a dedicated pursuit of crafting beautiful, functional websites.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2>Skills & Technologies</h2>
+        <div class="skills-grid" id="skills-grid"></div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>My Projects</h2>
+        <div class="portfolio-grid" id="portfolio-grid"></div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <form id="contact-form" class="contact-form">
+            <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+        <div class="social-links">
+            <a href="https://github.com/Kareem-Ali02" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/kareem02" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </section>
+
+    <button class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
